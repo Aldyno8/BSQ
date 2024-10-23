@@ -6,7 +6,7 @@
 /*   By: bvelonja <bvelonja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 13:08:11 by bvelonja          #+#    #+#             */
-/*   Updated: 2024/10/23 17:38:13 by bvelonja         ###   ########.fr       */
+/*   Updated: 2024/10/23 18:56:26 by bvelonja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,9 +111,8 @@ char	**plateau_to_tab(char *plateau)
 			j = 0;
 			c ++;
 		}
-		tab_plateau[i][j] = str_plateau[c];
+		tab_plateau[i][j] = str_plateau[c++];
 		j ++;
-		c ++;
 	}
 	free(str_plateau);
 	return (tab_plateau);

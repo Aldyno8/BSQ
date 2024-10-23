@@ -6,11 +6,10 @@
 /*   By: bvelonja <bvelonja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 13:46:39 by bvelonja          #+#    #+#             */
-/*   Updated: 2024/10/23 16:21:03 by bvelonja         ###   ########.fr       */
+/*   Updated: 2024/10/23 19:23:50 by bvelonja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "ft_lib.h"
 #include "struct.h"
 #include <stdlib.h>
@@ -18,7 +17,7 @@
 
 t_params	return_params(char *plateau);
 t_square	find_bsq(t_params params, char **plateau);
-void		print_result( t_params params,char **plateau);
+void		print_result( t_params params, char **plateau);
 int			is_square_valid(int x, int y, int gen, t_params p, char **plat);
 int			is_vide(char c, t_params params);
 
@@ -30,11 +29,7 @@ int	main(int ac, char *av[])
 	t_params	params;
 
 	i = 1;
-	if (ac < 2)
-	{
-		write (1, "map error\n", 10);
-		return (0);
-	}
+	(void)ac;
 	while (i < ac)
 	{
 		plateau = ft_files_to_plateau(av[i]);
