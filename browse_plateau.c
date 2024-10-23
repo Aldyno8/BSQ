@@ -6,7 +6,7 @@
 /*   By: bvelonja <bvelonja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 14:33:11 by bvelonja          #+#    #+#             */
-/*   Updated: 2024/10/23 10:11:24 by bvelonja         ###   ########.fr       */
+/*   Updated: 2024/10/23 13:16:26 by bvelonja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,5 +106,6 @@ int	is_vide(char c, t_params params)
 		return (0);
 	if (c == params.vide)
 		return (1);
-	return (1);
+	else
+		return (0);
 }

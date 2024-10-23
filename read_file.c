@@ -6,7 +6,7 @@
 /*   By: bvelonja <bvelonja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 13:08:11 by bvelonja          #+#    #+#             */
-/*   Updated: 2024/10/23 04:07:34 by bvelonja         ###   ########.fr       */
+/*   Updated: 2024/10/23 17:38:13 by bvelonja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #include <fcntl.h>
 #include <stdlib.h>
 #include "ft_lib.h"
-#include <stdio.h>
 
 int	ft_files_size(char *plateau)
 {

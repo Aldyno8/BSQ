@@ -6,7 +6,7 @@
 /*   By: bvelonja <bvelonja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 14:05:50 by bvelonja          #+#    #+#             */
-/*   Updated: 2024/10/23 09:38:15 by bvelonja         ###   ########.fr       */
+/*   Updated: 2024/10/23 12:26:34 by bvelonja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,6 @@ char		*ft_files_to_plateau(char *plateau);
 int			ft_strlen(char *str);
 int			is_plateau_valid(char *plateau);
 char		**plateau_to_tab(char *plateau);
+int			ft_atoi(char *str);
 
 #endif

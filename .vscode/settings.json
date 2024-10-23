@@ -1,5 +1,7 @@
 {
 	"files.associations": {
-		"struct.h": "c"
+		"struct.h": "c",
+		"ft_lib.h": "c",
+		"stdio.h": "c"
 	}
 }
