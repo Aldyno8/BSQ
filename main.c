@@ -6,7 +6,7 @@
 /*   By: bvelonja <bvelonja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 13:46:39 by bvelonja          #+#    #+#             */
-/*   Updated: 2024/10/23 19:23:50 by bvelonja         ###   ########.fr       */
+/*   Updated: 2024/10/23 21:21:19 by bvelonja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 t_params	return_params(char *plateau);
 t_square	find_bsq(t_params params, char **plateau);
 void		print_result( t_params params, char **plateau);
-int			is_square_valid(int x, int y, int gen, t_params p, char **plat);
+int			is_square_valid(t_scare_test sqare, t_params p, char **plat);
 int			is_vide(char c, t_params params);
 
 int	main(int ac, char *av[])
