@@ -6,7 +6,7 @@
 /*   By: bvelonja <bvelonja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 13:46:39 by bvelonja          #+#    #+#             */
-/*   Updated: 2024/10/23 03:07:00 by bvelonja         ###   ########.fr       */
+/*   Updated: 2024/10/23 11:52:17 by bvelonja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,17 @@
 #include <unistd.h>
 
 t_params	return_params(char *plateau);
+t_square	find_bsq(t_params params, char **plateau, char *str_plateau);
+int			is_square_valid(int x, int y, int gen, t_params p, char **plat);
+int			is_vide(char c, t_params params);
 
 int	main(int ac, char *av[])
 {
 	int			i;
 	char		*plateau;
-	// t_params	params;
-	// int			c;
 	char		**tab_plateau;
+	t_params	params;
+	t_square	square;
 
 	i = 1;
 	if (ac < 2)
@@ -41,18 +44,12 @@ int	main(int ac, char *av[])
 			return (0);
 		}
 		tab_plateau = plateau_to_tab(av[i]);
-		for (int i = 0; tab_plateau[i]; i++)
-		{
-			for (int j = 0; tab_plateau[i][j]; j++)
-			{
-				printf("%c", tab_plateau[i][j]);
-			}
-			printf("\n");
-		}
-		i ++;
+		params = return_params(plateau);
+		square = find_bsq(params, tab_plateau, plateau);
+		printf(" depart = %i\n", square.generator);
+		printf(" x_max = %i\n", square.x_max);
+		printf("y_max = %i\n", square.y_max);
 	}
-	// c = 4;
-	// params = return_params(plateau);
 	free(plateau);
 	return (0);
 }

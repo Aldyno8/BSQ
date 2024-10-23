@@ -6,7 +6,7 @@
 /*   By: bvelonja <bvelonja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 14:33:11 by bvelonja          #+#    #+#             */
-/*   Updated: 2024/10/23 01:18:20 by bvelonja         ###   ########.fr       */
+/*   Updated: 2024/10/23 10:11:24 by bvelonja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,16 +100,11 @@ int	is_plateau_valid(char *plateau)
 	return (1);
 }
 
-int	is_vide(char c, char *plateau)
+int	is_vide(char c, t_params params)
 {
-	t_params	params;
-
-	params = return_params(plateau);
 	if (c == params.obstacle)
 		return (0);
 	if (c == params.vide)
 		return (1);
-	if (c == '\n')
-		return (-1);
 	return (1);
 }
